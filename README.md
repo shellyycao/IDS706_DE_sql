@@ -4,7 +4,7 @@ For this assignment, I use SQLite in the terminal to perform data analysis.
 
 Here is what I did:
 1. Put db file in the folder.
-2. Run 'sqlite <filename>.db' to allow SQLite operation, my filename is 'university_databas', so I ran 'sqlite.university_database.db in the terminal.
+2. Run 'sqlite < filename >.db' to allow SQLite operation, my filename is 'university_databas', so I ran 'sqlite.university_database.db in the terminal.
 
 ————————
 
