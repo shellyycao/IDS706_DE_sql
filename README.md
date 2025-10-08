@@ -80,16 +80,16 @@ LIMIT 10;
 
 A: This query returns the top 10 institutions in 2015 based on their world rank, along with their country and score.
 
---1|Harvard University|USA|100.0
---2|Stanford University|USA|98.66
---3|Massachusetts Institute of Technology|USA|97.54
---4|University of Cambridge|United Kingdom|96.81
---5|University of Oxford|United Kingdom|96.46
---6|Columbia University|USA|96.14
---7|University of California, Berkeley|USA|92.25
---8|University of Chicago|USA|90.7
---9|Princeton University|USA|89.42
---10|Cornell University|USA|86.79
+--1|Harvard University|USA|100.0  
+--2|Stanford University|USA|98.66  
+--3|Massachusetts Institute of Technology|USA|97.54  
+--4|University of Cambridge|United Kingdom|96.81  
+--5|University of Oxford|United Kingdom|96.46  
+--6|Columbia University|USA|96.14  
+--7|University of California, Berkeley|USA|92.25  
+--8|University of Chicago|USA|90.7  
+--9|Princeton University|USA|89.42  
+--10|Cornell University|USA|86.79  
 
 ———————————
 
@@ -104,6 +104,8 @@ FROM university_rankings;
 ```
 
 A:This query returns the number of unique institutions and countries in the university_rankings table. There are 1005 unique institutions and 59 unique countries in the university_rankings table.  
+
+———————————
 
 Q: What is the minimum, maximum, and average scores from the university_rankings table for each year?
 
@@ -120,11 +122,11 @@ ORDER BY year;
 
 A: This query returns the minimum, maximum, and average scores from the university_rankings table for each year.
 
-year|min_score|max_score|avg_score
-2012|43.36|100.0|54.9409
-2013|44.26|100.0|55.2712
-2014|44.18|100.0|47.2858241758242
-2015|45.0|100.0|49.9744369369369
+year|min_score|max_score|avg_score  
+2012|43.36|100.0|54.9409  
+2013|44.26|100.0|55.2712  
+2014|44.18|100.0|47.2858241758242  
+2015|45.0|100.0|49.9744369369369  
 
 ———————————
 
@@ -143,11 +145,11 @@ ORDER BY year;
 
 A: This query returns the number institutions in the USA that are ranked between 1 and 100 each year.
 
-year|usa_top100
-2012|58
-2013|57
-2014|53
-2015|55
+year|usa_top100  
+2012|58  
+2013|57  
+2014|53  
+2015|55  
 
 ————————————————
 
@@ -166,11 +168,11 @@ ORDER BY year;
 
 A: This returns the average score among USA institutions whose world_rank is in the top 50.
 
-year|avg_score_usa_top50
-2012|63.5424324324324
-2013|65.1211764705882
-2014|73.3648387096774
-2015|71.3666666666667
+year|avg_score_usa_top50  
+2012|63.5424324324324  
+2013|65.1211764705882  
+2014|73.3648387096774  
+2015|71.3666666666667  
 
 Looks like US top 50 schools’ average score rose a lot from 2012→2014, then dropped a bit in 2015, but still stayed well above 2012–2013 levels! Which is a good sign that indicates the performance of top institutions in USA is improving!
 
